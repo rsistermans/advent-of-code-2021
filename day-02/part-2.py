@@ -8,14 +8,14 @@ def solution(lines):
     aim = 0
 
     for (i, n) in enumerate(lines):
-        chunks = n.split(" ")
-        if chunks[0] == "forward":
-            horizontal += int(chunks[1])
-            depth += (aim * int(chunks[1]))
-        elif chunks[0] == "down":
-            aim += int(chunks[1])
-        elif chunks[0] == "up":
-            aim -= int(chunks[1])
+        direction, value = n.split()
+        if direction == "forward":
+            horizontal += int(value)
+            depth += (aim * int(value))
+        elif direction == "down":
+            aim += int(value)
+        elif direction == "up":
+            aim -= int(value)
 
     print(horizontal * depth)
 
