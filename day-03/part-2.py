@@ -3,21 +3,42 @@ with open('input.txt') as f:
 
 
 def solution(lines):
-    # gamma_rate = ''
-    # epsilon_rate = ''
-    #
-    # for i in range(len(lines[0])):
-    #     on = 0
-    #     off = 0
-    #     for n in lines:
-    #         if int(n[i]) == 1:
-    #             on += 1
-    #         else:
-    #             off += 1
-    #     gamma_rate += '1' if on > off else '0'
-    #     epsilon_rate += '0' if on > off else '1'
-    #
-    # print(int(gamma_rate, 2) * int(epsilon_rate, 2))
+
+    oxygen_generator = get_oxygen_rating(lines)
+    co2_scrubber = get_co2_scrubber_rating(lines)
+
+    print(oxygen_generator * co2_scrubber)
+
+
+def get_oxygen_rating(lines):
+    i = 0
+    while len(lines) > 1 and i < len(lines[0]):
+        on = 0
+        off = 0
+        for (index, n) in enumerate(lines):
+            if int(n[i]) == 1:
+                on += 1
+            else:
+                off += 1
+        bit = 1 if on >= off else 0
+        lines = list(filter(lambda x: int(x[i]) == bit, lines))
+        i += 1
+    return int(lines[0], 2)
+
+def get_co2_scrubber_rating(lines):
+    i = 0
+    while len(lines) > 1 and i < len(lines[0]):
+        on = 0
+        off = 0
+        for (index, n) in enumerate(lines):
+            if int(n[i]) == 1:
+                on += 1
+            else:
+                off += 1
+        bit = 1 if on >= off else 0
+        lines = list(filter(lambda x: int(x[i]) == 1 - bit, lines))
+        i += 1
+    return int(lines[0], 2)
 
 
 solution(lines)
