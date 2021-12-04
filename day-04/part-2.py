@@ -23,7 +23,6 @@ def solution(lines):
                 winning_number = n
                 break
 
-
     if winning_number is not None:
         unmarked_numbers = get_unmarked_numbers(losing_bingo_card)
         sum_of_numbers = 0
