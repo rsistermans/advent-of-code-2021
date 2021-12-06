@@ -26,10 +26,6 @@ def solution(numbers):
         new_indices[8] = indices[0]
         indices = new_indices
 
-    result = 0
-    for key, value in indices.items():
-        result += value
-
     print(sum(indices.values()))
 
 
