@@ -1,6 +1,6 @@
 import re
 
-with open('example.txt') as f:
+with open('input.txt') as f:
     lines = [int(i) for i in f.readlines()[0].strip().split(',')]
 
 
