@@ -1,5 +1,3 @@
-import re
-
 with open('input.txt') as f:
     lines = [int(i) for i in f.readlines()[0].strip().split(',')]
 
