@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="121906a6-01fd-45e6-b90a-880bb8a3ca69" name="Changes" comment="Day 6">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/day-06/part-1.py" beforeDir="false" afterPath="$PROJECT_DIR$/day-06/part-1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day-06/part-2.py" beforeDir="false" afterPath="$PROJECT_DIR$/day-06/part-2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +13,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -168,7 +176,7 @@
       <workItem from="1638452189776" duration="923000" />
       <workItem from="1638464411888" duration="394000" />
       <workItem from="1638517525085" duration="2946000" />
-      <workItem from="1638618813248" duration="25352000" />
+      <workItem from="1638618813248" duration="25510000" />
     </task>
     <task id="LOCAL-00001" summary="clean">
       <created>1638452329601</created>
@@ -226,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638784300884</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Day 6">
+      <created>1638784362041</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1638784362041</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

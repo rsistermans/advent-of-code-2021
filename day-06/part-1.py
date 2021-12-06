@@ -25,6 +25,4 @@ def cycle(numbers):
     return new_numbers
 
 
-
-
 solution(lines)
