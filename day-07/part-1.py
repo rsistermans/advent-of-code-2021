@@ -5,7 +5,7 @@ with open('input.txt') as f:
 def solution(numbers):
 
     numbers.sort()
-    median = numbers.sort()[len(numbers) // 2]
+    median = numbers[len(numbers) // 2]
 
     fuel = 0
     for n in numbers:
