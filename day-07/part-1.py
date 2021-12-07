@@ -4,17 +4,15 @@ with open('input.txt') as f:
 
 def solution(numbers):
 
-    max_pos = max(numbers)
+    numbers.sort()
+    median = numbers.sort()[len(numbers) // 2]
 
-    options = []
+    fuel = 0
+    for n in numbers:
+        fuel += abs(median - n)
 
-    for i in range(1, max_pos + 1):
-        fuel = 0
-        for n in numbers:
-            fuel += abs(n - i)
-        options.append(fuel)
+    print(fuel)
 
-    print(min(options))
 
 
 solution(lines)
