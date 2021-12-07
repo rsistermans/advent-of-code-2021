@@ -14,5 +14,4 @@ def solution(numbers):
     print(fuel)
 
 
-
 solution(lines)
