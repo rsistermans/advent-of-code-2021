@@ -1,4 +1,6 @@
-with open('input.txt') as f:
+from collections import deque
+
+with open('example.txt') as f:
     lines = [i.strip() for i in f.readlines()]
 
 
@@ -34,8 +36,8 @@ def get_paths(path, has_double, result, connections):
     branches = connections[split_path]
 
     # remove start
-    result = [r for r in result if r != path]
-    for branch in [b for b in branches if b != 'start']:
+    result = deque([r for r in result if r != path])
+    for branch in deque([b for b in branches if b != 'start']):
         # add start,A
         # add start,B
         # if branch is not in path if it's lowercase
