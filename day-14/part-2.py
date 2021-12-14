@@ -51,12 +51,4 @@ def parse(lines):
     return result
 
 
-def count_quantities(string):
-    result = {}
-    for char in string:
-        if char not in result.keys():
-            result[char] = string.count(char)
-    return result
-
-
 solution(lines)
