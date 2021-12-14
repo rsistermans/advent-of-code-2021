@@ -24,9 +24,9 @@ def solution(input):
         for pair, count in pair_count.items():
             if count > 0:
                 char = rules[pair]
-                pair_count_copy[pair] = pair_count_copy[pair] - count
+                pair_count_copy[pair] -= count
                 for new_pair in [pair[0] + char, char + pair[1]]:
-                    pair_count_copy[new_pair] = pair_count_copy[new_pair] + count
+                    pair_count_copy[new_pair] += count
         pair_count = pair_count_copy
 
     # count chars
@@ -38,10 +38,8 @@ def solution(input):
 
     result[template[-1]] += 1
 
-    result_min = min(result.values())
-    result_max = max(result.values())
-
-    print(result_max - result_min)
+    result = result.values()
+    print(max(result)-min(result))
 
 
 def parse(lines):
