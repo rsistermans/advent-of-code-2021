@@ -24,11 +24,9 @@ def solution(input):
         for pair, count in pair_count.items():
             if count > 0:
                 char = rules[pair]
-                new_pair_1 = pair[0] + char
-                new_pair_2 = char + pair[1]
                 pair_count_copy[pair] = pair_count_copy[pair] - count
-                pair_count_copy[new_pair_1] = pair_count_copy[new_pair_1] + count
-                pair_count_copy[new_pair_2] = pair_count_copy[new_pair_2] + count
+                for new_pair in [pair[0] + char, char + pair[1]]:
+                    pair_count_copy[new_pair] = pair_count_copy[new_pair] + count
         pair_count = pair_count_copy
 
     # count chars
